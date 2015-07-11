@@ -1,0 +1,84 @@
+/* === Element ScaleIn === */
+@-webkit-keyframes scaleIn {
+	0% {opacity: 0;-webkit-transform: scale3d(0.9) translate3d(0, 5%, 0); transform: scale(0.9) translate3d(0, 5%, 0);}
+	100% {opacity: 1;-webkit-transform: scale(1) translate3d(0, 0, 0); transform: scale(1) translate3d(0, 0, 0);}
+}
+@-moz-keyframes scaleIn {
+	0% {opacity: 0;-moz-transform: scale(0.9) translate3d(0, 5%, 0); transform: scale(0.9) translate3d(0, 5%, 0);}
+	100% {opacity: 1;-moz-transform: scale(1) translate3d(0, 0, 0); transform: scale(1) translate3d(0, 0, 0);}
+}
+@-ms-keyframes scaleIn {
+	0% {opacity: 0;-ms-transform: scale(0.9) translate3d(0, 5%, 0); transform: scale(0.9) translate3d(0, 5%, 0);}
+	100% {opacity: 1;-ms-transform: scale(1) translate3d(0, 0, 0); transform: scale(1) translate3d(0, 0, 0);}
+}
+@keyframes scaleIn {
+	0% {opacity: 0;-webkit-transform: scale(0.9) translate3d(0, 5%, 0); -moz-transform: scale(0.9) translate3d(0, 5%, 0); -ms-transform: scale(0.9) translate3d(0, 5%, 0); transform: scale(0.9) translate3d(0, 5%, 0); }
+	100% {opacity: 1;-webkit-transform: scale(1) translate3d(0, 0, 0); -moz-transform: scale(1) translate3d(0, 0, 0); -ms-transform: scale(1) translate3d(0, 0, 0); transform: scale(1) translate3d(0, 0, 0); }
+}
+
+.scaleIn {
+	opacity: 0;
+	outline:1px solid transparent;
+
+	-webkit-animation: 	scaleIn 0.25s ease-out 0.25s both;
+	-moz-animation: 	scaleIn 0.25s ease-out 0.25s both;
+	-ms-animation: 		scaleIn 0.25s ease-out 0.25s both;
+	animation: 			scaleIn 0.25s ease-out 0.25s both;
+}
+.ie8 .scaleIn, .ie9 .scaleIn,
+.no-cssanimations .scaleIn{opacity:1}
+
+
+/* === Element SlideUp === */
+@-webkit-keyframes slideUp {
+	0% {opacity: 0; -webkit-transform: translate3d(0,45px,0) scale(0.75, 0.75); transform: translate3d(0,45px,0) scale(0.75, 0.75);}
+	100% {opacity: 1; -webkit-transform: translate3d(0,0,0) scale(1, 1); transform: translate3d(0,0,0) scale(1, 1);}
+}
+@-moz-keyframes slideUp {
+	0% {opacity: 0; -moz-transform: translate3d(0,45px,0) scale(0.75, 0.75); transform: translate3d(0,45px,0) scale(0.75, 0.75);}
+	100% {opacity: 1; -moz-transform: translate3d(0,0,0) scale(1, 1); transform: translate3d(0,0,0) scale(1, 1);}
+}
+@-ms-keyframes slideUp {
+	0% {opacity: 0; -ms-transform: translate3d(0,45px,0) scale(0.75, 0.75); transform: translate3d(0,45px,0) scale(0.75, 0.75);}
+	100% {opacity: 1; -ms-transform:translate3d(0,0,0) scale(1, 1); transform:translate3d(0,0,0) scale(1, 1);}
+}
+@keyframes slideUp {
+	0% {opacity: 0; -webkit-transform: translate3d(0,45px,0) scale(0.75, 0.75); -moz-transform: translate3d(0,45px,0) scale(0.75, 0.75); transform: translate3d(0,45px,0) scale(0.75, 0.75);}
+	100% {opacity: 1; -webkit-transform:translate3d(0,0,0) scale(1, 1); -moz-transform:translate3d(0,0,0) scale(1, 1); transform:translate3d(0,0,0) scale(1, 1);}
+}
+
+.slideUp{
+	opacity: 0;
+	outline:1px solid transparent;
+	-webkit-animation: slideUp 0.35s ease-in-out both;
+	-moz-animation: slideUp 0.35s ease-in-out both;
+	-ms-animation: slideUp 0.35s ease-in-out both;
+	animation: slideUp 0.35s ease-in-out both;
+}
+.ie8 .slideUp, .ie9 .slideUp,
+.no-cssanimations .slideUp{opacity: 1;}
+
+
+// Opacity
+@mixin opacity {
+	-webkit-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+}
+
+// Articles transition
+@mixin complex-transition {
+	-webkit-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, -moz-transform 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, -ms-transform 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+// Transition
+@mixin transition($what, $duration){
+	-webkit-transition: $what $duration ease-in-out;
+	-moz-transition: 	$what $duration ease-in-out;
+	-ms-transition: 	$what $duration ease-in-out;
+	transition: 		$what $duration ease-in-out;
+}

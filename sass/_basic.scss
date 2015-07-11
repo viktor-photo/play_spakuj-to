@@ -1,0 +1,82 @@
+/* ===== Basic Styles ===== */
+::selection{background: #563486;color: #fff}
+::-moz-selection{background: #563486;color: #fff}
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	text-rendering:     optimizeLegibility;
+	-webkit-tap-highlight-color:transparent;
+	-webkit-text-size-adjust:   100%;
+	-webkit-font-smoothing:     antialiased;
+}
+
+*:active {
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-moz-tap-highlight-color:   rgba(0,0,0,0);
+}
+
+.transition{
+	-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition:    all 0.15s ease-in-out;
+	-ms-transition:     all 0.15s ease-in-out;
+	transition:         all 0.15s ease-in-out;
+}
+
+sup{
+	padding-left: 7px;
+	font-size: 15px;
+}
+
+.ir {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.hidden{
+	display: none;
+}
+
+.not-visible{
+	opacity: 0;
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfix{zoom: 1}
+
+.small-4{ width: 33%}
+.small-6{ width: 48%}
+.small-8{ width: 64%}
+
+.left{float: left}
+.right{float: right}
+.center{text-align: center}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.violet{ color: #563486 }
+.uppercase{text-transform: uppercase}
+.block{ display: block}
+.inline{ display: inline}
+
+.v-align{
+	position: relative;
+	top: 40%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}

@@ -1,0 +1,62 @@
+@import "normalize";
+@import "font";
+@import "basic";
+@import "media-query-mixins";
+@import "animation";
+@import "simplebar";
+@import "buttons";
+@import "form";
+@import "typography";
+@import "general";
+@import "header";
+@import "main";
+@import "article";
+@import "mobile";
+
+
+
+/* === Part 1 === */
+.part-1{
+	background: url('../img/bg/bg-1.jpg') no-repeat center bottom transparent;
+	background-size: cover;
+}
+
+
+
+/* === Part 2 === */
+.part-2{
+	background: url('../img/bg/bg-2.jpg') no-repeat center top transparent;
+	background-size: cover;
+}
+
+
+
+/* === Part 3 === */
+.part-3{
+	background: url('../img/bg/bg-2.jpg') no-repeat center top transparent;
+	background-size: cover;
+}
+
+
+
+/* === Part 4 === */
+.part-4{
+	background: url('../img/bg/bg-2.jpg') no-repeat center top transparent;
+	background-size: cover;
+}
+
+
+
+/* === Part 5 === */
+.part-5{
+	background: url('../img/bg/bg-2.jpg') no-repeat center top transparent;
+	background-size: cover;
+}
+
+
+
+/* === Part 6 === */
+.part-6{
+	background: url('../img/bg/bg-2.jpg') no-repeat center top transparent;
+	background-size: cover;
+}

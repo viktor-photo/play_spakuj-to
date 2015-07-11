@@ -1,0 +1,135 @@
+/* === Header === */
+header{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+
+	.bar{
+		width: 100%;
+		display: table;
+		position: relative;
+		z-index: 10;
+	}
+
+	.logo{
+		display: table-cell;
+		width: 245px;
+
+		a{
+			height: 48px;
+			width: 225px;
+			line-height: 48px;
+			margin-right: 20px;
+			text-decoration: none;
+			display: block;
+			background: url("../img/play-logo.png") no-repeat 12px center #563486;
+			background-size: 130px 25px;
+		}
+	}
+
+	nav{
+		display: table-cell;
+		vertical-align: top;
+		position: relative;
+
+		ul{
+			display: block;
+			margin: 0;
+			padding-left: 1rem;
+			list-style: none;
+			height: 48px;
+			text-transform: uppercase;
+			background-color: #563486;
+
+			@include transition(width, 0.2s);
+		}
+
+		li{
+			display: inline-block;
+			padding: 0 2rem;
+			border-right: 1px solid #775d9e;
+
+			@include transition(padding, 0.2s);
+
+			@include desktop{
+				padding: 0 2.5rem;
+			}
+
+			@include widescreen{
+				padding: 0 3rem;
+			}
+
+			a{
+				color: #fff;
+				font-size: 20px;
+				line-height: 48px;
+				text-decoration: none;
+				display: inline-block;
+				padding: 0;
+				font-weight: 700;
+				position: relative;
+
+				&:active,
+				&:focus{
+					outline: none;
+				}
+			}
+		}
+
+		.menu-trigger{
+			width: 48px;
+			height: 48px;
+			display: none;
+			cursor: pointer;
+			position: absolute;
+			right: 0;
+			top: 0;
+			background-color: #563486;
+
+			&:before{
+				content: '';
+				width: 32px;
+				height: 16px;
+				display: block;
+				position: absolute;
+				top: 12px;
+				left: 8px;
+				border-top: 4px solid #fff;
+				border-bottom: 4px solid #fff;
+
+				@include transition(all, 0.25s);
+			}
+
+			&:after{
+				content: '';
+				width: 32px;
+				height: 4px;
+				background-color: #fff;
+				position: absolute;
+				top: 22px;
+				left: 8px;
+			}
+
+			&:hover{
+				&:before{
+					height: 18px;
+					top: 11px;
+				}
+			}
+		}
+
+		&.shrink{
+
+			ul{
+				display: none;
+			}
+
+			.menu-trigger{
+				display: block;
+			}
+		}
+	}
+}

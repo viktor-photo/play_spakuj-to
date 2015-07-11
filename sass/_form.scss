@@ -1,0 +1,107 @@
+/* === Form === */
+form{
+	position: relative;
+
+	.form-elem{
+		display: block;
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	textarea{
+		width: 100%;
+		position: relative;
+		border: 1px solid #333;
+		margin: 0;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"]{
+		line-height: 30px;
+		padding: 0 10px;
+	}
+
+	textarea{
+		padding: 10px 10px 25px;
+		min-height: 180px;
+
+		& + small{
+			font-size: 12px;
+			display: block;
+			position: absolute;
+			bottom: 6px;
+			right: 11px;
+			opacity: 0.5;
+		}
+	}
+
+	button{
+		border: none;
+	}
+
+	input[type="checkbox"]{
+		width: 1px;
+		height: 1px;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		visibility:hidden;
+		position: absolute;
+
+		& + label {
+			display: table;
+			position: relative;
+			background: transparent;
+			padding-left: 30px;
+			margin: 0 0 20px;
+			line-height: 1.25em;
+		}
+
+		& + label:before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			border: 1px solid #333;
+			position: absolute;
+			left: 0;
+			top: -1px;
+		}
+
+		& + label:after {
+			content: '';
+			width: 0px;
+			height: 0px;
+			border-bottom: 0px solid #563486;
+			border-left: 0px solid #563486;
+			position: absolute;
+			left: 7px;
+			top: 7px;
+
+			-webkit-transform:	rotate(-45deg);
+			-moz-transform: 	rotate(-45deg);
+			-ms-transform: 		rotate(-45deg);
+			transform: 			rotate(-45deg);
+
+			@include transition(all, 0.1s);
+		}
+
+		&:checked + label:after {
+			width: 8px;
+			height: 5px;
+			border-bottom-width: 2px;
+			border-left-width: 2px;
+			left: 4px;
+			top: 3px;
+		}
+	}
+
+	label a{
+		font-weight: 700;
+		text-decoration: none;
+		color: #563486;
+	}
+}

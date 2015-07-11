@@ -1,0 +1,22 @@
+/* ===== Fonts ===== */
+@font-face {
+	font-family: "bulldog";
+	src:	url("../fonts/bulldogregular-webfont.eot");
+	src: 	url("../fonts/bulldogregular-webfont.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/bulldogregular-webfont.svg") format("svg"),
+			url("../fonts/bulldogregular-webfont.woff") format("woff"),
+			url("../fonts/bulldogregular-webfont.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "bulldog";
+	src: 	url("../fonts/bulldogbold-webfont.eot");
+	src: 	url("../fonts/bulldogbold-webfont.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/bulldogbold-webfont.svg") format("svg"),
+			url("../fonts/bulldogbold-webfont.woff") format("woff"),
+			url("../fonts/bulldogbold-webfont.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}

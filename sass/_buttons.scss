@@ -1,0 +1,66 @@
+/* === Buttons === */
+.button{
+	display: inline-block;
+	line-height: 65px;
+	padding: 0 25px;
+	background: #563486;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 4px;
+	position: relative;
+
+	@include transition(all, 0.25s);
+
+	&:hover{
+		background: #482B75;
+		@include transition(all, 0.25s);
+	}
+
+	&.arrow{
+		padding: 0 75px 0 25px;
+
+		&:before{
+			content: '';
+			width: 25px;
+			height: 25px;
+			display: block;
+			margin-top: -13px;
+			position: absolute;
+			top: 50%;
+			right: 25px;
+			background: url('../img/btn-arrow.svg') no-repeat center center transparent;
+			background-size: 100% auto;
+		}
+	}
+
+	&.small{
+		line-height: 40px;
+		padding: 0 22px;
+		font-size: 18px;
+
+		&.arrow{
+			padding: 0 50px 0 30px;
+
+			&:before{
+				right: 17px;
+				width: 15px;
+				height: 15px;
+				margin-top: -8px;
+			}
+		}
+
+		&.no-bg{
+			color: #563486;
+			background: #fff;
+			line-height: 36px;
+			border: 2px solid #563486;
+		}
+	}
+
+	& + .button{
+		margin-left: 15px;
+	}
+}
