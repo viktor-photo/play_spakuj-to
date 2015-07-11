@@ -38,15 +38,12 @@ var App = {
 		var btn = $('a[data-part], button[data-part], span[data-part]');
 
 		btn.on('click', function(e){
-			var num = $(this).attr('data-part');
-
 			e.preventDefault();
 
-			if($('.modal-box').hasClass('active')) {
-				$('.modal-box').removeClass('active');
-			}
+			var num = $(this).attr('data-part');
 
 			$('article.part-' + num).addClass('active').siblings().removeClass('active');
+			$('header').find('a[data-part="'+num+'"]').parent('li').addClass('current').siblings().removeClass('current');
 		});
 	},
 

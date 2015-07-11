@@ -11,10 +11,16 @@ article{
 	z-index: 1;
 	opacity: 0;
 	visibility: hidden;
+	background-position: center top;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	@include opacity;
 
 	section.container{
+		display: block;
+		padding-top: 90px;
 		opacity: 0;
 		visibility: hidden;
 
@@ -40,5 +46,9 @@ article{
 			-ms-transform: 		scale(1);
 			transform: 			scale(1);
 		}
+	}
+
+	.text-block{
+		position: relative;
 	}
 }

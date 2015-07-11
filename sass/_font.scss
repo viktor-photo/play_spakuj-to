@@ -1,22 +1,47 @@
-/* ===== Fonts ===== */
+/* === Open Sans fonts === */
 @font-face {
-	font-family: "bulldog";
-	src:	url("../fonts/bulldogregular-webfont.eot");
-	src: 	url("../fonts/bulldogregular-webfont.eot?#iefix") format("embedded-opentype"),
-			url("../fonts/bulldogregular-webfont.svg") format("svg"),
-			url("../fonts/bulldogregular-webfont.woff") format("woff"),
-			url("../fonts/bulldogregular-webfont.ttf") format("truetype");
-	font-weight: 400;
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/opensans-bold.eot');
+	src: url('../fonts/open-sans/opensans-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans/opensans-bold.woff') format('woff'),
+		 url('../fonts/open-sans/opensans-bold.woff2') format('woff2'),
+		 url('../fonts/open-sans/opensans-bold.ttf') format('truetype'),
+		 url('../fonts/open-sans/opensans-bold.svg') format('svg');
 	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/opensans-regular.eot');
+	src: url('../fonts/open-sans/opensans-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans/opensans-regular.woff') format('woff'),
+		 url('../fonts/open-sans/opensans-regular.woff2') format('woff2'),
+		 url('../fonts/open-sans/opensans-regular.ttf') format('truetype'),
+		 url('../fonts/open-sans/opensans-regular.svg') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/opensans-light.eot');
+	src: url('../fonts/open-sans/opensans-light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans/opensans-light.woff') format('woff'),
+		 url('../fonts/open-sans/opensans-light.woff2') format('woff2'),
+		 url('../fonts/open-sans/opensans-light.ttf') format('truetype'),
+		 url('../fonts/open-sans/opensans-light.svg') format('svg');
+	font-style: normal;
+	font-weight: 300;
 }
 
+/* === Meloriac fonts === */
 @font-face {
-	font-family: "bulldog";
-	src: 	url("../fonts/bulldogbold-webfont.eot");
-	src: 	url("../fonts/bulldogbold-webfont.eot?#iefix") format("embedded-opentype"),
-			url("../fonts/bulldogbold-webfont.svg") format("svg"),
-			url("../fonts/bulldogbold-webfont.woff") format("woff"),
-			url("../fonts/bulldogbold-webfont.ttf") format("truetype");
-	font-weight: 700;
+	font-family: 'Meloriac';
+	src: url('../fonts/meloriac/meloriac.eot');
+	src: url('../fonts/meloriac/meloriac.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/meloriac/meloriac.woff') format('woff'),
+		 url('../fonts/meloriac/meloriac.woff2') format('woff2'),
+		 url('../fonts/meloriac/meloriac.ttf') format('truetype'),
+		 url('../fonts/meloriac/meloriac.svg') format('svg');
 	font-style: normal;
+	font-weight: 400;
 }

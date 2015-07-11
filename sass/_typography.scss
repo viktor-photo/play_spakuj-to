@@ -1,7 +1,20 @@
+.meloriac{ font-family: 'Meloriac';}
+.opensans{ font-family: 'Open Sans';}
+
+.size18{ font-size: 18px;}
+.size48{ font-size: 48px;}
+.size72{ font-size: 72px;}
+
+.lh-1{ line-height: 1em;}
+
+
+h1, h2, h3{
+	line-height: 1em;
+}
+
 h1{
-	text-align: center;
 	display: block;
 	font-size: 3.25rem;
-	line-height: 1em;
 	margin-bottom: 1.75rem;
 }
+

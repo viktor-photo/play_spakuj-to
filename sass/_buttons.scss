@@ -1,22 +1,32 @@
 /* === Buttons === */
 .button{
 	display: inline-block;
-	line-height: 65px;
+	line-height: 48px;
 	padding: 0 25px;
-	background: #563486;
-	color: #fff;
-	font-size: 30px;
+	text-align: center;
+	font-size: 17px;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
-	border-radius: 4px;
+	border-radius: 5px;
 	position: relative;
+	background-color: #583787;
+	color: #fff;
 
 	@include transition(all, 0.25s);
 
 	&:hover{
 		background: #482B75;
 		@include transition(all, 0.25s);
+	}
+
+	&.orange{
+		background-color: #f5c23e;
+		color: #583787;
+
+		&:hover{
+			background-color: darken(#f5c23e, 5%);
+		}
 	}
 
 	&.arrow{
@@ -36,31 +46,7 @@
 		}
 	}
 
-	&.small{
-		line-height: 40px;
-		padding: 0 22px;
-		font-size: 18px;
-
-		&.arrow{
-			padding: 0 50px 0 30px;
-
-			&:before{
-				right: 17px;
-				width: 15px;
-				height: 15px;
-				margin-top: -8px;
-			}
-		}
-
-		&.no-bg{
-			color: #563486;
-			background: #fff;
-			line-height: 36px;
-			border: 2px solid #563486;
-		}
-	}
-
-	& + .button{
-		margin-left: 15px;
+	&.wide{
+		padding: 0 60px;
 	}
 }

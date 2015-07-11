@@ -1,7 +1,7 @@
 /* === Header === */
 header{
 	position: absolute;
-	top: 30px;
+	top: 20px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -16,11 +16,11 @@ header{
 
 	.logo{
 		display: table-cell;
-		width: 245px;
+		width: 265px;
 
 		a{
 			height: 48px;
-			width: 225px;
+			width: 245px;
 			line-height: 48px;
 			margin-right: 20px;
 			text-decoration: none;
@@ -49,22 +49,34 @@ header{
 
 		li{
 			display: inline-block;
-			padding: 0 2rem;
+			padding: 0 1.8125rem;
 			border-right: 1px solid #775d9e;
 
 			@include transition(padding, 0.2s);
 
 			@include desktop{
-				padding: 0 2.5rem;
+				padding: 0 2.325rem;
 			}
 
 			@include widescreen{
-				padding: 0 3rem;
+				padding: 0 2.675rem;
+			}
+
+			&.current{
+				a:before{
+					width: 100%;
+					height: 3px;
+					bottom: 8px;
+					left: 0;
+					opacity: 1;
+
+					@include transition(all, 0.2s);
+				}
 			}
 
 			a{
 				color: #fff;
-				font-size: 20px;
+				font-size: 1rem;
 				line-height: 48px;
 				text-decoration: none;
 				display: inline-block;
@@ -75,6 +87,17 @@ header{
 				&:active,
 				&:focus{
 					outline: none;
+				}
+
+				&:before{
+					content: '';
+					background-color: #fff;
+					display: block;
+					width: 1px;
+					margin: 0 auto;
+					position: absolute;
+					left: 50%;
+					opacity: 0;
 				}
 			}
 		}

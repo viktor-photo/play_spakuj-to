@@ -29,21 +29,6 @@ sup{
 	font-size: 15px;
 }
 
-.ir {
-	overflow: hidden;
-	text-indent: 100%;
-	white-space: nowrap;
-}
-
-.hidden{
-	display: none;
-}
-
-.not-visible{
-	opacity: 0;
-	visibility: hidden;
-}
-
 .clearfix:before,
 .clearfix:after {
 	content: '';
@@ -67,14 +52,27 @@ img{
 	height: auto;
 }
 
-.violet{ color: #563486 }
-.uppercase{text-transform: uppercase}
-.block{ display: block}
-.inline{ display: inline}
+.violet{ color: #563486;}
+.yellow{ color: #f5c23e;}
+.uppercase{text-transform: uppercase;}
+.block{ display: block;}
+.inline{ display: inline;}
+.hidden{ display: none;}
+
+.ir {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.not-visible{
+	opacity: 0;
+	visibility: hidden;
+}
 
 .v-align{
 	position: relative;
-	top: 40%;
+	top: 50%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);

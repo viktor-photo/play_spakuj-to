@@ -1,0 +1,47 @@
+// Opacity
+@mixin opacity {
+	-webkit-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out;
+}
+
+// Articles transition
+@mixin complex-transition {
+	-webkit-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, -moz-transform 0.25s ease-in-out;
+	-ms-transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, -ms-transform 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out, visibility 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+// Transition
+@mixin transition($what, $duration){
+	-webkit-transition: $what $duration ease-in-out;
+	-moz-transition: 	$what $duration ease-in-out;
+	-ms-transition: 	$what $duration ease-in-out;
+	transition: 		$what $duration ease-in-out;
+}
+
+// Animation delay mixin
+@mixin delay($duration){
+	-webkit-animation-delay: $duration;
+	-moz-animation-delay: 	 $duration;
+	-ms-animation-delay: 	 $duration;
+	animation-delay: 		 $duration;
+}
+
+// Rotate
+@mixin rotate($deg) {
+	-webkit-transform: 	rotate($deg);
+	-moz-transform: 	rotate($deg);
+	-ms-transform: 		rotate($deg);
+	transform: 			rotate($deg);
+}
+
+// Scale
+@mixin scale($s){
+	-webkit-transform: 	scale($s);
+	-moz-transform: 	scale($s);
+	-ms-transform: 		scale($s);
+	transform: 			scale($s);
+}
