@@ -23,19 +23,25 @@
 	line-height: 0;
 
 	position: absolute;
-	top: 50%;
+	left: 50%;
+	margin-left: -20px;
 
 	display: block;
 
-	width: 20px;
-	height: 20px;
-	margin-top: -10px;
+	width: 40px;
+	height: 40px;
 	padding: 0;
+	z-index: 11;
+
+	border-top: 3px solid #563486;
+	border-right: 3px solid #563486;
+	border-bottom: 0;
+	border-left: 0;
 
 	cursor: pointer;
 
 	color: transparent;
-	border: none;
+	// border: none;
 	outline: none;
 	background: transparent;
 }
@@ -61,58 +67,14 @@
 	opacity: .25;
 }
 
-.slick-prev:before,
-.slick-next:before
-{
-	font-family: 'slick';
-	font-size: 20px;
-	line-height: 1;
-
-	opacity: .75;
-	color: white;
-
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+.slick-prev{
+	top: 90px;
+	@include rotate(-45deg);
 }
 
-.slick-prev
-{
-	left: -25px;
-	color: #563486;
-}
-[dir='rtl'] .slick-prev
-{
-	right: -25px;
-	left: auto;
-}
-.slick-prev:before
-{
-	content: '<';
-	color: #563486;
-}
-[dir='rtl'] .slick-prev:before
-{
-	content: '→';
-}
-
-.slick-next
-{
-	right: -25px;
-	color: #563486;
-}
-[dir='rtl'] .slick-next
-{
-	right: auto;
-	left: -25px;
-}
-.slick-next:before
-{
-	content: '>';
-	color: #563486;
-}
-[dir='rtl'] .slick-next:before
-{
-	content: '←';
+.slick-next{
+	bottom: 90px;
+	@include rotate(135deg);
 }
 
 /* Dots */

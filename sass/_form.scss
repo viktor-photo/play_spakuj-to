@@ -5,7 +5,7 @@ form{
 	.form-elem{
 		display: block;
 		position: relative;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	input[type="text"],
@@ -14,28 +14,49 @@ form{
 	textarea{
 		width: 100%;
 		position: relative;
-		border: 1px solid #333;
+		border: 2px solid #563486;
 		margin: 0;
+		font-size: 16px;
+
+		&:focus{
+			outline: none;
+		}
 	}
 
 	input[type="text"],
 	input[type="email"],
 	input[type="password"]{
-		line-height: 30px;
+		line-height: 45px;
 		padding: 0 10px;
 	}
 
 	textarea{
-		padding: 10px 10px 25px;
+		padding: 10px 10px 35px;
 		min-height: 180px;
+		border-top: none;
+		border-bottom: none;
 
 		& + small{
 			font-size: 12px;
 			display: block;
 			position: absolute;
-			bottom: 6px;
-			right: 11px;
-			opacity: 0.5;
+			bottom: 0px;
+			right: 0px;
+			left: 0px;
+			height: 30px;
+			width: auto;
+			line-height: 30px;
+			padding: 0 12px 0 0;
+			text-align: right;
+			background-color: #fff;
+			color: #aaa;
+			border-right: 2px solid #563486;
+			border-bottom: 2px solid #563486;
+			border-left: 2px solid #563486;
+
+			&.hide{
+				display: none;
+			}
 		}
 	}
 
@@ -59,13 +80,14 @@ form{
 			padding-left: 30px;
 			margin: 0 0 20px;
 			line-height: 1.25em;
+			font-size: 14px;
 		}
 
 		& + label:before {
 			content: '';
 			width: 16px;
 			height: 16px;
-			border: 1px solid #333;
+			border: 2px solid #563486;
 			position: absolute;
 			left: 0;
 			top: -1px;
@@ -78,8 +100,8 @@ form{
 			border-bottom: 0px solid #563486;
 			border-left: 0px solid #563486;
 			position: absolute;
-			left: 7px;
-			top: 7px;
+			left: 9px;
+			top: 8px;
 
 			-webkit-transform:	rotate(-45deg);
 			-moz-transform: 	rotate(-45deg);
@@ -90,12 +112,12 @@ form{
 		}
 
 		&:checked + label:after {
-			width: 8px;
+			width: 10px;
 			height: 5px;
 			border-bottom-width: 2px;
 			border-left-width: 2px;
 			left: 4px;
-			top: 3px;
+			top: 4px;
 		}
 	}
 

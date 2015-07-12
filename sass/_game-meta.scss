@@ -26,6 +26,8 @@
 		}
 
 		&.timer{
+			min-width: 90px;
+
 			&:before{
 				background: url('../img/svg/clock.svg') no-repeat center center transparent;
 				background-size: 26px auto;

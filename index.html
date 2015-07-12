@@ -24,11 +24,14 @@
 					</div>
 					<nav>
 						<ul>
-							<li><a href="#" title="Zagraj" data-part="play-small">zagraj</a></li>
+							<li><a href="#" title="Zagraj" data-part="play-large">zagraj</a></li>
 							<li><a href="#" title="Zasady" data-part="rules">zasady</a></li>
 							<li><a href="#" title="Nagrody" data-part="prizes">nagrody</a></li>
 							<li><a href="#" title="Ranking" data-part="ranking">ranking</a></li>
 							<li><a href="#" title="Oferta" data-part="oferta">oferta</a></li>
+
+							<li><a href="#" title="" data-part="save-result">save</a></li>
+
 						</ul>
 						<span class="menu-trigger ir" title="Menu">Menu</span>
 					</nav>
@@ -79,7 +82,7 @@
 					</div>
 
 					<div class="game-meta">
-						<div class="timer">52:34</div>
+						<div class="timer" data-time="July 18, 2015 00:30:10">52:34</div>
 						<div class="star">232</div>
 					</div>
 
@@ -727,6 +730,73 @@
 				</section>
 			</article>
 
+			<!-- Save Result page-->
+			<article class="part-save-result">
+				<img src="img/blob-small.png" class="blob" alt="blob">
+				<img src="img/straw-hat.png" class="v-align hat" alt="straw hat">
+				<section class="container clearfix">
+
+					<h2 class="violet meloriac uppercase center transition">Zapisz swój wynik!</h2>
+					<span class="block violet center">Odpowiedz kreatywnie na pytanie i podaj nam swoje dane, aby zapisać zgłoszenie i walczyć o nagrody!</span>
+
+					<div class="form-wrap">
+						<form action="post" class="clearfix">
+							<div class="small-6 left">
+								<div class="form-elem has-offset textarea">
+									<label for="textarea">Co zabrałbyś ze sobą do lorem ipsum dolor?</label>
+									<textarea name="answer" id="textarea" maxlength="500" placeholder="Moja odpowiedź..."></textarea>
+									<small class="char-counter"></small>
+								</div>
+							</div>
+							<div class="small-6 right">
+								<div class="clearfix mb20">
+									<div class="small-8">
+										<div class="clearfix">
+											<div class="small-6 left">
+												<div class="form-elem">
+													<input type="text" id="nick" placeholder="Twój nick">
+												</div>
+											</div>
+										</div>
+										<div class="clearfix">
+											<div class="small-6 left">
+												<div class="form-elem">
+													<input type="email" id="email" placeholder="E-mail">
+												</div>
+											</div>
+											<div class="small-6 right">
+												<div class="form-elem">
+													<input type="email" id="email-confirm" placeholder="Potwierdź e-mail">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix mb20">
+									<div class="form-elem">
+										<input type="checkbox" id="check-1">
+										<label for="check-1">Akceptuję <a href="#" title="regulamin">regulamin</a> konkursu.*</label>
+									</div>
+									<div class="form-elem">
+										<input type="checkbox" id="check-2">
+										<label for="check-2">Wyrażam zgodę na przetwarzanie danych osobowych na potrzeby realizacji konkursu.*<br />* Warunek konieczny do wzięcia udziału w konkursie</label>
+									</div>
+									<div class="form-elem">
+										<input type="checkbox" id="check-3">
+										<label for="check-3">Wyrażam zgodę na przetwarzanie danych osobowych w celach<br />marketingowych przez firmę P4 Sp. z o.o.</label>
+									</div>
+								</div>
+								<div class="clearfix">
+									<button class="button orange wide mb20" type="submit" title="Wyślij zgłoszenie">Wyślij zgłoszenie</button>
+									<a href="#" class="button wide no-bg" data-part="play-large" title="Zagraj jeszcze raz">Zagraj jeszcze raz</a>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</section>
+			</article>
+
 		</main>
 
 		<!-- Mobile screen  -->
@@ -752,6 +822,7 @@
 		</div>
 
 		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.countdown.js"></script>
 		<script src="js/slick.js"></script>
 		<script src="js/script.js"></script>
 	</body>
