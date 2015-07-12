@@ -1,0 +1,160 @@
+/* === Homepage === */
+.part-home{
+	background-image: url('../img/bg/bg-1.jpg');
+	background-size: cover;
+
+	.container{
+		max-width: 960px;
+	}
+
+	.text-block{
+		margin-top: -2rem;
+		padding-right: 80px;
+	}
+
+	h1{
+		margin: 0 0 2rem;
+
+		span{
+			line-height: 1em;
+			font-size: 75px;
+
+			& + span{
+				line-height: 125px;
+				font-size: 170px;
+			}
+		}
+	}
+
+	.images-wrap{
+		height: 600px;
+		position: relative;
+
+		& > * {
+			position: absolute;
+			display: block;
+		}
+
+		.blob{
+			width: 100px;
+			bottom: 45px;
+			right: 0px;
+		}
+
+		.woman-1{
+			left: 75px;
+			top: 20px;
+		}
+
+		.woman-2{
+			right: 10px;
+		}
+	}
+
+	.img-stack{
+		position: relative;
+		width: 360px;
+		height: 140px;
+		display: block;
+		margin: 0 auto;
+
+		& > * {
+			position: absolute;
+		}
+
+		.img-1{
+			width: 55px;
+			@include rotate(40deg);
+			opacity: 0.9;
+			top: 0;
+			left: 35px;
+		}
+		.img-2{
+			width: 105px;
+			@include rotate(-35deg);
+			opacity: 0.9;
+			top: 20px;
+			left: 50px;
+		}
+		.img-3{
+			width: 100px;
+			opacity: 0.9;
+			top: 5px;
+			left: 165px;
+			@include rotate(-125deg);
+		}
+		.img-4{
+			width: 80px;
+			opacity: 0.9;
+			top: 6px;
+			left: 115px;
+		}
+		.img-5{
+			width: 75px;
+			@include rotate(25deg);
+			top: 25px;
+			left: 245px;
+		}
+		.img-6{
+			width: 85px;
+			opacity: 0.9;
+			top: 45px;
+			right: 10px;
+		}
+	}
+
+	span{
+		line-height: 1.25em;
+	}
+
+	.button{
+		margin-top: 20px;
+	}
+
+	&.active{
+
+		.woman-1{
+			opacity: 0;
+			outline:1px solid transparent;
+			-webkit-animation: 	slideRight 0.5s ease-out both;
+			-moz-animation: 	slideRight 0.5s ease-out both;
+			-ms-animation: 		slideRight 0.5s ease-out both;
+			animation: 			slideRight 0.5s ease-out both;
+
+			@include delay(0.15s);
+		}
+
+		.woman-2{
+			opacity: 0;
+			outline:1px solid transparent;
+			-webkit-animation: 	slideLeft 0.5s ease-out both;
+			-moz-animation: 	slideLeft 0.5s ease-out both;
+			-ms-animation: 		slideLeft 0.5s ease-out both;
+			animation: 			slideLeft 0.5s ease-out both;
+
+			@include delay(0.15s);
+		}
+
+		.blob{
+			opacity: 0;
+			outline:1px solid transparent;
+			-webkit-animation: 	slideRight 0.5s ease-out both;
+			-moz-animation: 	slideRight 0.5s ease-out both;
+			-ms-animation: 		slideRight 0.5s ease-out both;
+			animation: 			slideRight 0.5s ease-out both;
+
+			@include delay(0.75s);
+		}
+
+		.button{
+			opacity: 0;
+			outline:1px solid transparent;
+			-webkit-animation: slideUp 0.35s ease-in-out both;
+			-moz-animation: slideUp 0.35s ease-in-out both;
+			-ms-animation: slideUp 0.35s ease-in-out both;
+			animation: slideUp 0.35s ease-in-out both;
+
+			@include delay(0.25s);
+		}
+	}
+}

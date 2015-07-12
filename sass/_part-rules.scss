@@ -1,0 +1,58 @@
+/* === Rules === */
+.part-rules{
+	background-image: url('../img/bg/bg-2.jpg');
+
+	h2{
+		margin-bottom: 25px;
+	}
+
+	.list-wrap{
+		width: 95%;
+		margin: 0 auto 25px;
+
+		& > div{
+			padding: 0 25px;
+		}
+
+		img{
+			display: block;
+			margin: 0 auto 20px;
+			position: relative;
+		}
+
+		span{
+			display: block;
+			line-height: 1.25em;
+
+			@include transition(all, 0.2s);
+		}
+	}
+
+	&.active{
+
+		.small-3{
+			-webkit-animation: 	slideLeft 0.25s ease-out both;
+			-moz-animation: 	slideLeft 0.25s ease-out both;
+			-ms-animation: 		slideLeft 0.25s ease-out both;
+			animation: 			slideLeft 0.25s ease-out both;
+
+			&.col-1{
+				@include delay(0.2s);
+			}
+			&.col-2{
+				@include delay(0.3s);
+			}
+			&.col-3{
+				@include delay(0.4s);
+			}
+			&.col-4{
+				@include delay(0.5s);
+			}
+		}
+	}
+
+	.button{
+		margin: 0 auto;
+		display: table;
+	}
+}

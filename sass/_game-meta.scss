@@ -1,0 +1,42 @@
+
+.game-meta{
+	position: absolute;
+	display: block;
+	bottom: 15px;
+	left: 0;
+
+	& > div{
+		display: inline-block;
+		color: #563486;
+		font-size: 40px;
+		line-height: 40px;
+		font-family: 'Cutepunk';
+		padding-left: 32px;
+		margin-right: 25px;
+		position: relative;
+
+		&:before{
+			content: '';
+			width: 26px;
+			height: 32px;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		&.timer{
+			&:before{
+				background: url('../img/svg/clock.svg') no-repeat center center transparent;
+				background-size: 26px auto;
+			}
+		}
+
+		&.star{
+			&:before{
+				background: url('../img/svg/star.svg') no-repeat center center transparent;
+				background-size: 26px auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+/* === Thank You === */
+.part-thank-you{
+	background-image: url('../img/bg/bg-2.jpg');
+
+	.blob{
+		position: absolute;
+		display: block;
+		bottom: -30px;
+		left: -50px;
+
+		@include rotate(-40deg);
+	}
+	.hat{
+		display: block;
+		position: absolute;
+		left: -220px;
+	}
+
+	h2{
+		display: block;
+		font-size: 115px;
+		margin: 65px 0 40px;
+
+		span{
+			display: block;
+			line-height: 95px;
+		}
+	}
+
+	.btns-wrap{
+		position: relative;
+
+		.button{
+			display: table;
+			margin: 0 auto;
+
+			& + .button{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+
+				@include translate(280px, 0, 0);
+			}
+		}
+	}
+}

@@ -45,3 +45,17 @@
 	font-style: normal;
 	font-weight: 400;
 }
+
+
+/* === CutePunk fonts === */
+@font-face {
+	font-family: 'Cutepunk';
+	src: url('../fonts/cutepunk/meloriac_bold.eot');
+	src: url('../fonts/cutepunk/cutepunk_bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/cutepunk/cutepunk_bold.woff') format('woff'),
+		 url('../fonts/cutepunk/cutepunk_bold.woff2') format('woff2'),
+		 url('../fonts/cutepunk/cutepunk_bold.ttf') format('truetype'),
+		 url('../fonts/cutepunk/cutepunk_bold.svg') format('svg');
+	font-style: normal;
+	font-weight: 700;
+}

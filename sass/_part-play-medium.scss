@@ -1,0 +1,52 @@
+/* === Game medium suitcase === */
+.part-play-medium{
+	background-image: url('../img/bg/bg-2.jpg');
+
+	section.container{
+		padding: 0;
+	}
+
+	.suitcase-medium{
+		display: block;
+		position: absolute;
+		bottom: 60px;
+		left: -130px;
+		width: 852px;
+		height: 770px;
+		background: url('../img/suitcase-medium.png') no-repeat center center transparent;
+
+		&:before{
+			content: '';
+			width: 190px;
+			height: 179px;
+			display: block;
+			background: url('../img/blob-small.png') no-repeat center center transparent;
+			position: absolute;
+			right: -20px;
+			top: 80px;
+			z-index: -1;
+		}
+
+		@include transition(all, 0.5s);
+
+		@include desktop{
+			left: -30px;
+		};
+
+		@include widescreen{
+			left: 40px;
+		};
+
+		.inner{
+			display: block;
+			width: 470px;
+			height: 345px;
+			border-radius: 25px;
+			background-color: tomato;
+			position: absolute;
+			left: 220px;
+			bottom: 60px;
+		}
+	}
+
+}

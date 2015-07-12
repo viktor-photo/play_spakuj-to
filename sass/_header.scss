@@ -30,6 +30,10 @@ header{
 		}
 	}
 
+	.container{
+		overflow: hidden;
+	}
+
 	nav{
 		display: table-cell;
 		vertical-align: top;
@@ -37,6 +41,7 @@ header{
 
 		ul{
 			display: block;
+			position: relative;
 			margin: 0;
 			padding-left: 1rem;
 			list-style: none;
@@ -44,7 +49,9 @@ header{
 			text-transform: uppercase;
 			background-color: #563486;
 
-			@include transition(width, 0.2s);
+			@include transition(all, 0.2s);
+
+			@include translate(0, 0, 0);
 		}
 
 		li{
@@ -147,7 +154,7 @@ header{
 		&.shrink{
 
 			ul{
-				display: none;
+				@include translate(100%, 0, 0);
 			}
 
 			.menu-trigger{

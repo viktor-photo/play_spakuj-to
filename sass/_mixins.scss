@@ -45,3 +45,11 @@
 	-ms-transform: 		scale($s);
 	transform: 			scale($s);
 }
+
+// Translate
+@mixin translate($plx,$ply,$plz){
+	-webkit-transform: 	translate3d($plx,$ply,$plz);
+	-moz-transform: 	translate3d($plx,$ply,$plz);
+	-ms-transform: 		translate3d($plx,$ply,$plz);
+	transform: 			translate3d($plx,$ply,$plz);
+}

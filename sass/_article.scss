@@ -21,6 +21,7 @@ article{
 	section.container{
 		display: block;
 		padding-top: 90px;
+		font-size: 16px;
 		opacity: 0;
 		visibility: hidden;
 
@@ -30,6 +31,14 @@ article{
 		transform: 			scale(0.9);
 
 		@include complex-transition;
+
+		@include desktop{
+			font-size: 17px;
+		}
+
+		@include widescreen{
+			font-size: 18px;
+		}
 	}
 
 	&.active{

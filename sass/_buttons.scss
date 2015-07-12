@@ -29,21 +29,9 @@
 		}
 	}
 
-	&.arrow{
-		padding: 0 75px 0 25px;
-
-		&:before{
-			content: '';
-			width: 25px;
-			height: 25px;
-			display: block;
-			margin-top: -13px;
-			position: absolute;
-			top: 50%;
-			right: 25px;
-			background: url('../img/btn-arrow.svg') no-repeat center center transparent;
-			background-size: 100% auto;
-		}
+	&.no-bg{
+		background-color: transparent;
+		color: #583787;
 	}
 
 	&.wide{
